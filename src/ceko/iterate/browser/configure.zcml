@@ -1,0 +1,16 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"    
+    xmlns:i18n="http://namespaces.zope.org/i18n"    
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="ceko.iterate">
+    
+    <browser:viewlet
+	    name="plone.contentviews"
+	    for="*"
+	    class=".viewlets.ContentViews"
+	    manager="plone.app.layout.viewlets.interfaces.IContentViews"
+	    template="templates/contentviews.pt"	    
+	    permission="zope2.View"
+	/>
+    
+</configure>
